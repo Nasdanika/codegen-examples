@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.nasdanika.codegen:Workspace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.nasdanika.codegen="urn:org.nasdanika.codegen" description="Generates a text file with a greeting.">
+  <elements xsi:type="org.nasdanika.codegen:Project" name="MyGeneratedProject">
+    <resources xsi:type="org.nasdanika.codegen:TextFile" name="hello-{{greeting}}.txt" reconcileAction="Overwrite">
+      <generator xsi:type="org.nasdanika.codegen:Interpolator">
+        <generator xsi:type="org.nasdanika.codegen:StaticText" content="Hello {{greeting}}!"/>
+      </generator>
+    </resources>
+  </elements>
+</org.nasdanika.codegen:Workspace>
